@@ -1,0 +1,249 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New";
+    overflow: hidden;
+}
+
+#radiusDisplay{
+    bottom: 0;
+    position: fixed;
+    text-align: right;
+    width: 95%;
+}
+.location{
+    text-align: left;
+    width: 40%;
+    margin: auto;
+}
+#slider{
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+ul{
+    list-style: none;
+    margin: auto;
+    height:80%;
+}
+
+.location::first-letter{
+    font-size: 150%;
+}
+#placeHolder{
+    overflow: auto;
+    height: 70%;
+    width: 100%;
+    margin: auto;
+    border-bottom: white solid 1px;
+}
+/*
+ * Globals
+ */
+
+/* Links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #00cca3;
+}
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+#webTitle::first-letter{
+    font-size: 3em;
+    color: #00cca3;
+}
+/*
+ * Header
+ */
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: #999; /* IE8 proofing */
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+#btnMute {
+    border-radius: 50%;
+    float: right;
+    padding: 1%;
+    background: #333333;
+    background-image: -webkit-linear-gradient(top, #333333, #cccccc);
+    background-image: -moz-linear-gradient(top, #333333, #cccccc);
+    background-image: -ms-linear-gradient(top, #333333, #cccccc);
+    background-image: -o-linear-gradient(top, #333333, #cccccc);
+    background-image: linear-gradient(to bottom, #333333, #cccccc);
+    -webkit-border-radius: 21;
+    -moz-border-radius: 21;
+    border-radius: 21px;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 0px;
+    text-decoration: none;
+}
+
+#btnMute:hover {
+    color: #00cca3;
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%;
+    }
+}
+#footer{
+    position: fixed;
+    width: 100%;
+}
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(47, 47, 66, 0.43);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(101, 167, 255, 0);
+    -webkit-box-shadow: inset 0 0 6px rgb(246, 250, 255);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(255, 255, 255);
+}

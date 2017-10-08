@@ -1,0 +1,28 @@
+{
+  "name": "px_final_radio_gardan",
+  "version": "1.0.0",
+  "description": "radio_gardan",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "radio"
+  ],
+  "author": "daniel",
+  "license": "ISC",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^4.15.3",
+    "http": "0.0.0",
+    "jquery-ui": "^1.12.1",
+    "player": "^0.6.1",
+    "protobufjs": "^5.0.1",
+    "rangeslider.js": "^2.3.0",
+    "socket.io": "^2.0.1",
+    "websocket": "^1.0.24",
+    "ws": "^3.0.0"
+  }
+}
